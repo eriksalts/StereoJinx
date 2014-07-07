@@ -11,14 +11,9 @@ $(document).ready(function(){
         var search = {
             q: $searchField.val()
         }; //search object
-        function displaySpotify(album){
-            var albumsHTML = '<ul class="panel">';
-            $.each(album.albumImage, function (i, albumImage) {
-               albumsHTML += '<li>';
-               albumsHTML += '<img class="thumbnail" src="'+ albumImage.images.height.width + '"></li>';
-            });
-            albumsHTML += '</ul>';
-            $('#album').html(albumsHTML);
+        function displaySpotify(array){
+            console.log(array);
+            $('#album').html(results.artists.items[0].name);
         }
         $.getJSON(spotifyURL, search, displaySpotify);
     }); //end button.click

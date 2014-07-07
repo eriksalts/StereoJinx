@@ -3,7 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="sjstyle.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="container">
@@ -11,9 +11,17 @@
 			<div class="jumbotron">
 				<h1>StereoJinx</h1>
 				<p>Hook up with other people listening to the same music. Sign up and Jinx someone!</p>
-				<p><a class="btn btn-primary btn-lg" role="button">Jinx!</a></p>
+                <div class="col-lg-12">
+                    <form class="input-group">
+                        <input type="search" name="search" id="search">
+                        <button type="submit" class="btn btn-primary">Jinx!</button>
+                    </form>
+                </div><!-- /input-group -->
 			</div>
 	<!-- /JUMBOTRON -->
+            <ul id="album">
+
+            </ul>
 		</div> <!-- /container -->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

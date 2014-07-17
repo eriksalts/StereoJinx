@@ -9,32 +9,112 @@ $(document).ready(function(){
         //AJAX
         var spotifyURL = 'https://api.spotify.com/v1/search';
         var search = {
-            q: $searchField.val()
+            q: $searchField.val(),
+            type: 'artist'
+        //  limit: 1
         }; //search object
-        function displaySpotify(array){
-            console.log(array);
-            $('#album').html(results.artists.items[0].name);
+        function displaySpotify(results){
+            console.log(results);
+            //$('#album').html(results.artists.items[0].images[0]);
+            var albumsHTML = '<ul class="panel">';
+            $.each(results.artists.items, function (i, albumImage) {
+                albumsHTML += '<li>';
+                albumsHTML += '<img src="' + results.artists.items[0].images[0].url + '"></li>';
+
+                albumsHTML += '<img src="' + results.artists.items[0].images[0].url + '"></li>';
+                albumsHTML += '<img src="' + results.artists.items[0].images[0].url + '"></li>';
+                });
+                albumsHTML += '</ul>';
+                $('#spotify').html(albumsHTML);
         }
         $.getJSON(spotifyURL, search, displaySpotify);
-    }); //end button.click
+    }); //end form.submit
+
+
+
+
+
+
+
 //Rdio api
+//$.ajax({
+//    type: "POST",
+//    url: 'http://api.rdio.com/1/getAlbumsForArtist',
+//    data: data,
+//    success: success,
+//    dataType: 'json'
+//});
+
+
+//
+//
+//
+//
+//
+//
+//    var duration = 1; // track the duration of the currently playing track
+//    $(document).ready(function() {
+//        $('#api').bind('ready.rdio', function() {
+//            $(this).rdio().play('a171827');
+//        });
+//        $('#api').bind('playingTrackChanged.rdio', function(e, playingTrack, sourcePosition) {
+//            if (playingTrack) {
+//                duration = playingTrack.duration;
+//                $('#art').attr('src', playingTrack.icon);
+//                $('#track').text(playingTrack.name);
+//                $('#album').text(playingTrack.album);
+//                $('#artist').text(playingTrack.artist);
+//            }
+//        });
+//        $('#api').bind('positionChanged.rdio', function(e, position) {
+//            $('#position').css('width', Math.floor(100*position/duration)+'%');
+//        });
+//        $('#api').bind('playStateChanged.rdio', function(e, playState) {
+//            if (playState == 0) { // paused
+//                $('#play').show();
+//                $('#pause').hide();
+//            } else {
+//                $('#play').hide();
+//                $('#pause').show();
+//            }
+//        });
+        // this is a valid playback token for localhost.
+        // but you should go get your own for your own domain.
+//        $('#api').rdio('GAlNi78J_____zlyYWs5ZG02N2pkaHlhcWsyOWJtYjkyN2xvY2FsaG9zdEbwl7EHvbylWSWFWYMZwfc=');
+//
+//        $('#previous').click(function() { $('#api').rdio().previous(); });
+//        $('#play').click(function() { $('#api').rdio().play(); });
+//        $('#pause').click(function() { $('#api').rdio().pause(); });
+//        $('#next').click(function() { $('#api').rdio().next(); });
+//    });
+
+
+
+
 //    $('form').submit(function(evt){
 //        evt.preventDefault();
-//        var $searchField = $('#search');
+//        //var $searchField = $('#search');
 //        //AJAX
-//        var spotifyURL = 'https://api.spotify.com/v1/artists/{id}/albums';
-//        var search = {
-//            id: $searchField.val()
+//        var dataObj = {
+//            artist: "wilco" //$searchField.val(),
 //        }; //search object
-//        function displaySpotify(album){
-//            var albumsHTML = '<ul class="panel">';
-//            $.each(album.albumImage, function (i, albumImage) {
-//                albumsHTML += '<li>';
-//                albumsHTML += '<img class="thumbnail" src="'+ albumImage.images.height.width + '"></li>';
-//            });
-//            albumsHTML += '</ul>';
-//            $('#album').html(albumsHTML);
-//        }
-//        $.getJSON(spotifyURL, search, displaySpotify);
-//    }); //end button.click
+//        $.support.cors = true;
+//        $.ajax({
+//            data: dataObj,
+//            dataType: 'json',
+//            type: 'POST',
+//            url: 'http://api.rdio.com/1/getAlbumsForArtist',
+//            success: function displayRdio(results){
+//                console.log(results);
+//                // $('#album').html(results.artists.items[0].images[0]);
+//                var albumsHTML = '<ul class="panel">';
+//                $.each(results.artists.items, function (i, albumImage) {
+//                    albumsHTML += '<li>';
+//                    albumsHTML += '<img src="' + results.artists.items[0].images[0].url + '"></li>';
+//                });
+//                albumsHTML += '</ul>';
+//                $('#radioAlbum').html(albumsHTML);
+//            }
+//        });
+//    }); //end form.submit
 }); //end doc ready

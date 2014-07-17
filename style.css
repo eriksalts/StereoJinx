@@ -1,3 +1,50 @@
 .jumbotron{
 	margin-top: 50px;
 }
+ul img{
+    height: 200px;
+    width: 250px;
+}
+.service-logo{
+    margin: auto;
+}
+#rdio-logo{
+    margin-top: 18px;
+    padding-bottom: 22px;
+}
+#jumbotron{
+    background-color:#585858;
+    opacity: 0.6;
+    border-radius: 4px;
+}
+#background{
+    background-image: url('images/highway.jpg');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    margin: 0 -15px 30px -15px;
+    padding:30px 250px 100px 250px;
+}
+#search-input{
+    max-width: 60%;
+}
+#site-logo{
+    text-align: center;
+}
+.site-title{
+    text-align: center;
+    display: inline-block;
+}
+#jinx{
+    color:#0080FF;
+}
+#site-explanation{
+    margin-top: 30px;
+    text-align: center;
+    color:#E6E6E6;
+}
+#search-input{
+    padding-top: 38px;
+}
+#search{
+    padding: 21px;
+}

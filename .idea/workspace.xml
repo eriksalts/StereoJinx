@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4959f1a2-6964-4974-beef-8bc38daa2226" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/StereoJinx.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/om.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/rdio-credentials.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/rdio.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rdio_consumer_credentials.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/get-user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StereoJinx.iws" />
@@ -39,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="7" selection-start="2143" selection-end="2143" vertical-scroll-proportion="0.8051948" vertical-offset="162" max-vertical-offset="855">
+            <state line="41" column="18" selection-start="1807" selection-end="1807" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -69,7 +56,16 @@
       <file leaf-file-name="rdio.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/rdio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="2" selection-start="2863" selection-end="2863" vertical-scroll-proportion="-27.625" vertical-offset="372" max-vertical-offset="1125">
+            <state line="47" column="50" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-4.48" vertical-offset="481" max-vertical-offset="1125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get-user.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/get-user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="2" selection-start="2394" selection-end="2394" vertical-scroll-proportion="2.0820897" vertical-offset="0" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
@@ -98,7 +94,7 @@
       <file leaf-file-name="om.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/om.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="2" selection-start="5209" selection-end="5209" vertical-scroll-proportion="-27.625" vertical-offset="1362" max-vertical-offset="2115">
+            <state line="51" column="29" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-6.6" vertical-offset="435" max-vertical-offset="2115">
               <folding />
             </state>
           </provider>
@@ -136,6 +132,7 @@
         <option value="$PROJECT_DIR$/rdio-credentials.php" />
         <option value="$PROJECT_DIR$/rdio.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/get-user.php" />
       </list>
     </option>
   </component>
@@ -301,7 +298,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22638889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23319027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -620,16 +617,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/om.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="2" selection-start="5209" selection-end="5209" vertical-scroll-proportion="-27.625" vertical-offset="1362" max-vertical-offset="2115">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rdio_consumer_credentials.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="219" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="41" column="18" selection-start="1807" selection-end="1807" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="855">
           <folding />
         </state>
       </provider>
@@ -641,16 +631,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/rdio.php">
+    <entry file="file://$PROJECT_DIR$/rdio_consumer_credentials.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="2" selection-start="2863" selection-end="2863" vertical-scroll-proportion="-27.625" vertical-offset="372" max-vertical-offset="1125">
+        <state line="6" column="32" selection-start="219" selection-end="229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/includes/om.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="7" selection-start="2143" selection-end="2143" vertical-scroll-proportion="0.8051948" vertical-offset="162" max-vertical-offset="855">
+        <state line="51" column="29" selection-start="2303" selection-end="2303" vertical-scroll-proportion="-6.6" vertical-offset="435" max-vertical-offset="2115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/rdio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="50" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-4.48" vertical-offset="481" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get-user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="2" selection-start="2394" selection-end="2394" vertical-scroll-proportion="2.0820897" vertical-offset="0" max-vertical-offset="1485">
           <folding />
         </state>
       </provider>

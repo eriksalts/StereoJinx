@@ -1,6 +1,6 @@
 <?php
 require 'includes/rdio.php';
-require_once 'includes/rdio-consumer-credentials.php';
+require_once 'includes/rdio-credentials.php';
 
 date_default_timezone_set('UTC');
 
@@ -14,12 +14,12 @@ $method = $_POST['type'];
 $user = $_POST['user'];
 
 switch ($_POST['type']) {
-    case 'findUser':
+    case 'search':
         $resultDepth = false;
         if (filter_var($user, FILTER_VALIDATE_EMAIL)) {
-            $user_type = 'email';
+            $user_type = 'query';
         } else {
-            $user_type = 'vanityName';
+            $user_type = 'types';
         }
         $params = array(
             $user_type => $user,

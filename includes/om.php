@@ -1,5 +1,4 @@
 <?php
-<?php
 # om is oauth-mini - a simple implementation of a useful subset of OAuth.
 # It's designed to be useful and reusable but not general purpose.
 #
